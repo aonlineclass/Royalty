@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up with Twitter</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-900 flex items-center justify-center min-h-screen overflow-y-hidden">
+    <div id="alert" class="absolute bottom-5 right-3">
+    </div>
+
+    <div class="bg-gray-800 p-6 rounded-lg shadow-2xl w-full max-w-sm">
+        <div class="text-center mb-4">
+            <!-- Twitter Logo SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50" class="mx-auto mb-4 fill-current text-blue-400">
+                <path d="M23.954 4.569c-.885.391-1.83.656-2.825.775 1.014-.604 1.794-1.557 2.163-2.695-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.59-1.559-2.717 0-4.917 2.2-4.917 4.917 0 .39.045.765.127 1.124-4.083-.204-7.699-2.16-10.125-5.13-.422.722-.664 1.561-.664 2.457 0 1.693.861 3.188 2.173 4.065-.802-.025-1.555-.246-2.213-.616v.061c0 2.364 1.682 4.336 3.918 4.779-.409.111-.838.171-1.283.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.416-1.68 1.319-3.8 2.105-6.102 2.105-.394 0-.779-.023-1.158-.068 2.189 1.401 4.768 2.215 7.557 2.215 9.054 0 14.004-7.5 14.004-14.004 0-.213-.005-.426-.014-.637.961-.69 1.797-1.56 2.457-2.548l-.047-.02z"/>
+            </svg>
+        </div>
+
+        
+        <h2 class="text-xl font-bold text-white">Sign Up with Twitter</h2>
+        <form action="/signup" class="my-5" id="signupform" method="POST">
+            <div class="mb-3">
+                <label for="name" class="block text-gray-400">Name</label>
+                <input type="text" id="name" name="name" class="w-full p-2 border border-gray-700 rounded mt-1 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-gray-700 text-gray-300">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="block text-gray-400">Email</label>
+                <input type="email" id="email" name="email" class="w-full p-2 border border-gray-700 rounded mt-1 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-gray-700 text-gray-300">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="block text-gray-400">Password</label>
+                <input type="password" id="password" name="password" class="w-full p-2 border border-gray-700 rounded mt-1 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-gray-700 text-gray-300">
+            </div>
+            <div class="mb-3">
+                <label for="confirm_password" class="block text-gray-400">Confirm Password</label>
+                <input type="password" id="confirm_password" name="confirm_password" class="w-full p-2 border border-gray-700 rounded mt-1 focus:outline-none focus:ring-2 focus:ring-indigo-500 bg-gray-700 text-gray-300">
+            </div>
+            <div class="mb-4">
+                <label for="terms" class="inline-flex items-center">
+                    <input type="checkbox" id="terms" name="terms" class="form-checkbox text-indigo-500 bg-gray-700 border-gray-700">
+                    <span class="ml-2 text-gray-400">I agree to the terms and conditions</span>
+                </label>
+            </div>
+            <div>
+                <button type="submit" class="w-full bg-indigo-600 text-white p-2 rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">Sign Up</button>
+            </div>
+        </form>
+        <p class="mt-4 text-center text-gray-400">Already have an account? <a href="/login" class="text-indigo-500 hover:underline">Sign In</a></p>
+    </div>
+</body>
+
+<script src="signup.js"></script>
+<script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+</html>

@@ -1,0 +1,77 @@
+{
+    "users": {
+      "user_id": "unique_identifier_for_user",
+      "username": "string",
+      "email": "string",
+      "password": "string",
+      "profile": {
+        "name": "string",
+        "bio": "string",
+        "location": "string",
+        "website": "string",
+        "profile_image_url": "string",
+        "cover_image_url": "string"
+      },
+      "created_at": "datetime",
+      "updated_at": "datetime",
+      "followers_count": "integer",
+      "following_count": "integer",
+      "tweets_count": "integer",
+      "likes_count": "integer"
+    }
+  }
+
+
+
+
+
+
+
+  {
+    "tweets": {
+      "tweet_id": "unique_identifier_for_tweet",
+      "user_id": "unique_identifier_for_user",
+      "content": "string",
+      "created_at": "datetime",
+      "updated_at": "datetime",
+      "likes_count": "integer",
+      "retweets_count": "integer",
+      "replies_count": "integer",
+      "media": [
+        {
+          "media_id": "unique_identifier_for_media",
+          "media_url": "string",
+          "media_type": "string" // e.g., image, video, etc.
+        }
+      ],
+      "replies": [
+        {
+          "reply_id": "unique_identifier_for_reply",
+          "user_id": "unique_identifier_for_user",
+          "content": "string",
+          "created_at": "datetime",
+          "updated_at": "datetime",
+          "likes_count": "integer"
+        }
+      ]
+    }
+  }
+
+
+
+
+
+
+
+  
+  {
+    "likes": {
+      "like_id": "unique_identifier_for_like",
+      "user_id": "unique_identifier_for_user",
+      "tweet_id": "unique_identifier_for_tweet",
+      "liked_at": "datetime"
+    }
+  }
+  
+  
+  
