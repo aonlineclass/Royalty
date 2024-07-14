@@ -19,7 +19,7 @@ const [email,password,loginform,alert1]= [document.getElementById('email'),docum
 
 
 
-    fetch("http://localhost:3000/login",{
+    fetch("https://royalty-ltl5.onrender.com/login",{
         method:"POST",
         headers:{
             "Content-Type":"application/json"
@@ -30,7 +30,7 @@ const [email,password,loginform,alert1]= [document.getElementById('email'),docum
      }).then(response=>{
          
         if(response.success){
-             location.href = `http://localhost:3000`;
+             location.href = `https://royalty-ltl5.onrender.com/`;
         }else if(response.success == false){
            alert1.innerHTML = `<div class="flex w-full max-w-sm overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
            <div class="flex items-center justify-center w-12 bg-red-500">
